@@ -272,7 +272,24 @@
 
             // Redirigez vers la page de profil si la connexion est réussie
             window.location.href = "profile.html";
+
         });
+        document.getElementById("signup-btn").addEventListener("click", function (e) {
+                e.preventDefault();
+                document.querySelector(".signup-form-container").style.display = "flex";
+            });
+
+            document.getElementById("close-signup-form").addEventListener("click", function () {
+                document.querySelector(".signup-form-container").style.display = "none";
+            });
+
+            document.getElementById("signupFormContainer").addEventListener("submit", function (e) {
+                e.preventDefault();
+                // Ajoutez ici votre logique de traitement du formulaire d'inscription
+
+                // Fermez le formulaire d'inscription après un traitement réussi
+                document.querySelector(".signup-form-container").style.display = "none";
+            });
     });
 </script>
 </head>
