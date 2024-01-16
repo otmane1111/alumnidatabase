@@ -233,8 +233,74 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="css/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script src="scripts/script.js"></script>
+    <!-- <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Gestion du formulaire de connexion
+        document.getElementById("login-btn").addEventListener("click", function (e) {
+            e.preventDefault();
+            document.querySelector(".login-form-container").style.display = "flex";
+        });
 
-    <!-- Formulaire de connexion -->
+        document.getElementById("close-login-form").addEventListener("click", function () {
+            document.querySelector(".login-form-container").style.display = "none";
+        });
+
+        document.getElementById("loginFormContainer").addEventListener("submit", function (e) {
+            e.preventDefault();
+            // Ajoutez ici votre logique de vérification des informations de connexion
+
+            // Redirigez vers la page de profil si la connexion est réussie
+            window.location.href = "profile.html";
+        });
+    });
+</script> -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Gestion du formulaire de connexion
+        document.getElementById("login-btn").addEventListener("click", function (e) {
+            e.preventDefault();
+            document.querySelector(".login-form-container").style.display = "flex";
+        });
+
+        document.getElementById("close-login-form").addEventListener("click", function () {
+            document.querySelector(".login-form-container").style.display = "none";
+        });
+
+        document.getElementById("loginFormContainer").addEventListener("submit", function (e) {
+            e.preventDefault();
+            // Ajoutez ici votre logique de vérification des informations de connexion
+
+            // Redirigez vers la page de profil si la connexion est réussie
+            window.location.href = "profile.html";
+        });
+    });
+</script>
+</head>
+
+<body>
+<!-- Votre contenu HTML existant reste inchangé -->
+
+<!-- Formulaire de connexion -->
+<div class="login-form-container" id="loginFormContainer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <form class="login-form">
+                    <h2>Alumni Login</h2>
+                    <span style="padding: 15px;"></span>
+                    <input type="text" placeholder="username" name="username">
+                    <input type="password" placeholder="password" name="password">
+                    <button>Login</button>
+                    <p class="message"><a href="#" id="close-login-form" class="toggle">Close</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Formulaire de connexion
     <div class="login-form-container">
         <div class="container">
             <div class="row">
@@ -250,7 +316,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Formulaire d'inscription -->
     <div class="signup-form-container">
